@@ -19,6 +19,10 @@ Publish config (optionally):
 
 Scripts in the `js-snippet` component will get minified (thanks to https://github.com/tedious/JShrink) and loaded as separate Javascript source.
 
+You need to define the stack that the script tag will be pushed to (default: `scripts`).
+
+By default this will only be run in the `production` environment (you can change this in the config).
+
 ## Behind the scenes
 The component will minify its content and put it in a file in the view cache. 
 It will also generate a key based on the content.
