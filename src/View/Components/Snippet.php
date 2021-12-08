@@ -23,7 +23,7 @@ class Snippet extends Component
                 file_put_contents($filepath, $minifiedJavascript);
             }
 
-            return '@push("' . config('js-snippets.stack') . '")<script src="' . url(config('js-snippets.url') . '/' . $hash . '.js') . '"/>' . PHP_EOL . '@endpush';
+            return '@push("' . config('js-snippets.stack') . '")<script src="' . url(config('js-snippets.url') . '/' . $hash . '.js') . '"></script>' . PHP_EOL . '@endpush';
         };
     }
 }
